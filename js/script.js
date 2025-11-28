@@ -55,7 +55,7 @@ document.getElementById("logoutBtn").addEventListener("click", function() {
 
 // ===== Generar QR =====
 function generarQR() {
-  const url = " https://arizmendijose3-gif.github.io/Tuto/"; // Cambia por la URL real de tu página o APK
+  const url = " https://arizmendijose3-gif.github.io/Tutorialmovil//"; // Cambia por la URL real de tu página o APK
   const qrContainer = document.getElementById("qr");
   qrContainer.innerHTML = ""; // Limpia el contenedor antes de generar
   new QRCode(qrContainer, {
@@ -63,4 +63,5 @@ function generarQR() {
     width: 200,
     height: 200
   });
+
 }
