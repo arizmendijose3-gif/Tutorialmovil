@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial de Desarrollo Móvil</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Tutorial de Desarrollo de Apps Móviles</h1>
+    <nav>
+      <ul>
+        <li><a href="#sensores">Gestión de Sensores</a></li>
+        <li><a href="#servicios">Servicios y Notificaciones</a></li>
+        <li><a href="#librerias">Librerías y Toolkits</a></li>
+        <li><a href="#seguridad">Depuración y Seguridad</a></li>
+        <li><a href="#empaquetado">Empaquetado y Despliegue</a></li>
+        <li><a href="#distribucion">Plataformas y Distribución</a></li>
+        <li><a href="#referencias">Referencias</a></li>
+        <li><a href="#compartir">Compartir</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Login con registro -->
+  <section id="login">
+    <h2>Login / Registro</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Usuario" required>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="submit">Ingresar</button>
+      <button type="button" id="registerBtn">Registrar</button>
+      <button type="button" id="logoutBtn">Cerrar Sesión</button>
+    </form>
+    <p id="loginMessage"></p>
+  </section>
+
+  <!-- Secciones del tutorial -->
+  <section id="sensores">
+    <h2>Gestión de Sensores</h2>
+    <img src="images/sensores.jpg" alt="Sensor móvil" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> Los sensores en dispositivos móviles permiten detectar movimiento, orientación, luz, proximidad, entre otros.</p>
+    <p><strong>Ejemplo:</strong> Un juego que usa el acelerómetro para mover un personaje al inclinar el teléfono.</p>
+    <ul>
+      <li>Tipos de sensores: acelerómetro, giroscopio, proximidad, luz.</li>
+      <li>Gestión: habilitación, lectura de datos, procesamiento en tiempo real.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://developer.android.com/guide/topics/sensors/sensors_overview" target="_blank">Guía oficial de sensores en Android</a></p>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios y Notificaciones en App</h2>
+    <img src="images/servicios.jpg" alt="Servicios móviles" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> Los servicios permiten ejecutar tareas en segundo plano, como sincronización de datos o envío de notificaciones.</p>
+    <p><strong>Ejemplo:</strong> Una app de mensajería que recibe notificaciones aunque esté cerrada.</p>
+    <ul>
+      <li>Servicios en segundo plano: sincronización, monitoreo, actualizaciones.</li>
+      <li>Notificaciones: locales y push.</li>
+      <li>Proveedores de contenido: compartir datos entre apps.</li>
+      <li>Servicios en la nube: Firebase, AWS, Azure.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://developer.android.com/guide/components/services" target="_blank">Servicios en Android</a></p>
+  </section>
+
+  <section id="librerias">
+    <h2>Librerías y Toolkits para desarrollo móvil</h2>
+    <img src="images/librerias.jpg" alt="Librerías móviles" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> Conjuntos de funciones y recursos que facilitan el desarrollo de apps.</p>
+    <p><strong>Ejemplo:</strong> Usar <em>Retrofit</em> en Android para manejar peticiones HTTP.</p>
+    <ul>
+      <li>Librerías de UI: Material Design, Bootstrap.</li>
+      <li>Librerías de red: Retrofit, Volley.</li>
+      <li>Toolkits multiplataforma: Flutter, React Native.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://flutter.dev/" target="_blank">Flutter - Toolkit multiplataforma</a></p>
+  </section>
+
+  <section id="seguridad">
+    <h2>Depuración y Seguridad en Apps</h2>
+    <img src="images/seguridad.jpg" alt="Seguridad en apps" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> La depuración permite identificar errores, mientras que la seguridad protege datos y accesos.</p>
+    <p><strong>Ejemplo:</strong> Usar registros del sistema (logs) para detectar fallos.</p>
+    <ul>
+      <li>Herramientas de depuración: Android Studio Debugger, Logcat.</li>
+      <li>Refactorización: mejorar código sin cambiar funcionalidad.</li>
+      <li>Seguridad: permisos, cifrado, autenticación externa.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://developer.android.com/studio/debug" target="_blank">Depuración en Android Studio</a></p>
+  </section>
+
+  <section id="empaquetado">
+    <h2>Herramientas para Empaquetado y Despliegue</h2>
+    <img src="images/empaquetado.jpg" alt="Empaquetado de apps" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> El empaquetado convierte tu aplicación en un archivo instalable (.apk).</p>
+    <p><strong>Ejemplo:</strong> Usar Android Studio para generar un APK firmado.</p>
+    <ul>
+      <li>Tipos de empaquetado: debug, release.</li>
+      <li>Herramientas: Android Studio, Gradle.</li>
+      <li>Despliegue: Google Play Console.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://developer.android.com/studio/publish" target="_blank">Publicar apps en Android</a></p>
+  </section>
+
+  <section id="distribucion">
+    <h2>Plataformas y Canales de Distribución</h2>
+    <img src="images/distribucion.jpg" alt="Distribución de apps" style="max-width:100%; height:auto;">
+    <p><strong>Concepto:</strong> Las plataformas de distribución permiten publicar apps y llegar a los usuarios.</p>
+    <p><strong>Ejemplo:</strong> Distribuir una app en Google Play con pruebas cerradas antes del lanzamiento público.</p>
+    <ul>
+      <li>Plataformas: Google Play, App Store.</li>
+      <li>Canales: pruebas internas, cerradas, abiertas.</li>
+      <li>Requisitos: políticas de cada tienda.</li>
+    </ul>
+    <p><strong>Enlace útil:</strong> <a href="https://play.google.com/console/about/" target="_blank">Google Play Console</a></p>
+  </section>
+
+  <section id="referencias">
+    <h2>Referencias</h2>
+    <ul>
+      <li><a href="https://developer.android.com/" target="_blank">Documentación oficial de Android</a></li>
+      <li><a href="https://developer.apple.com/" target="_blank">Documentación oficial de Apple</a></li>
+      <li><a href="https://firebase.google.com/docs" target="_blank">Firebase Docs</a></li>
+    </ul>
+  </section>
+
+  <!-- Sección para QR -->
+  <section id="compartir">
+    <h2>Compartir Página</h2>
+    <div id="qr"></div>
+    <button onclick="generarQR()">Generar QR</button>
+  </section>
+
+  <footer>
+    <p>Versión: <span id="version">v2.1.0</span></p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <!-- Librería para QR -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <!-- Registro del Service Worker -->
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js")
+        .then(reg => console.log("Service Worker registrado:", reg))
